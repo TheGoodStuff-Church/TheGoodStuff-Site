@@ -35,4 +35,6 @@ We are expected the site to work just as well on mobile devices as it does on de
 * [MySQL](https://dev.mysql.com/downloads/mysql/)
   * [.NET Connector Install](https://dev.mysql.com/doc/connector-net/en/connector-net-installation-binary-nuget.html)
   * [.NET Connection instructions](https://dev.mysql.com/doc/connector-net/en/connector-net-connections-string.html)
-* [Blazorise](https://blazorise.com/)
+* Layout Framework (One of these.)
+  * [Blazorise](https://blazorise.com/)
+  * [BlazorStrap](https://blazorstrap.io)
