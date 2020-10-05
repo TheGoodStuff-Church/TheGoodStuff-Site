@@ -1,4 +1,4 @@
 # TheGoodStuff-Site
 The core of TheGoodStuff.church website.
 
-[License](License)
+[License](https://github.com/TheGoodStuff-Church/TheGoodStuff-Site/blob/main/LICENSE)
