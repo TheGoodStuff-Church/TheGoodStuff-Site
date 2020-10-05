@@ -66,7 +66,7 @@ Minister Brian Webb
 TheGoodStuff.church
 
 # Notes
-[Project Notes](Notes/home.md)
+[Project Notes](https://github.com/TheGoodStuff-Church/TheGoodStuff-Site/wiki)
 
 # Licenses
 * [MIT License](https://github.com/TheGoodStuff-Church/TheGoodStuff-Site/blob/main/LICENSE) 
