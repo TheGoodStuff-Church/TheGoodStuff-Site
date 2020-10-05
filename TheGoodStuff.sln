@@ -1,0 +1,32 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30524.135
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TheGoodStuff.Church", "TheGoodStuff.Church\TheGoodStuff.Church.csproj", "{8C75C22B-8CCD-41BF-99A7-D4EC32E85F5E}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Project Content", "Project Content", "{A9D82E6E-CD2B-4866-8A38-26EF69C665E4}"
+	ProjectSection(SolutionItems) = preProject
+		Notes\home.md = Notes\home.md
+		LICENSE = LICENSE
+		README.md = README.md
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8C75C22B-8CCD-41BF-99A7-D4EC32E85F5E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8C75C22B-8CCD-41BF-99A7-D4EC32E85F5E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8C75C22B-8CCD-41BF-99A7-D4EC32E85F5E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8C75C22B-8CCD-41BF-99A7-D4EC32E85F5E}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {042CAAA0-44B8-48C2-A021-B04C665E1363}
+	EndGlobalSection
+EndGlobal
