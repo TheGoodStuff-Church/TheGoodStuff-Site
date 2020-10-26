@@ -15,6 +15,7 @@ namespace TheGoodStuff.Church.Data.Models
     { 
         public Guid Id { get; set; }
         [StringLength(100, MinimumLength = 10, ErrorMessage = "Name must be between 10 and 100 characters.")]
+        [Required]
         public string Name { get; set; }
         public DateTime DateEntered { get; set; }
         public Nullable<DateTime> DateLastProcessed { get; set; }
