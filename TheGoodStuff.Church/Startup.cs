@@ -11,6 +11,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using TheGoodStuff.Church.ConfigModels;
 using TheGoodStuff.Church.Data;
 using TheGoodStuff.Church.Data.Models;
 
@@ -31,10 +32,36 @@ namespace TheGoodStuff.Church
                 options.UseSqlServer(
                     Configuration.GetConnectionString("DefaultConnection")));
 
+            services.AddSingleton<SiteBasics>( 
+                Configuration
+                .GetSection("Site")
+                .Get<SiteBasics>());
+
             services.AddDatabaseDeveloperPageExceptionFilter();
 
-            services.AddDefaultIdentity<ApplicationUser>(options => options.SignIn.RequireConfirmedAccount = true)
-                .AddEntityFrameworkStores<ApplicationDbContext>();
+            services.AddIdentity<ApplicationUser, ApplicationRole>(sa=> 
+            { 
+                sa.Password.RequiredLength = 6;
+                sa.Password.RequireDigit = false;
+                sa.Password.RequireLowercase = true;
+                sa.Password.RequiredUniqueChars = 2;
+                sa.Password.RequireNonAlphanumeric = true;
+                sa.Password.RequireUppercase = true;
+
+                sa.Lockout.AllowedForNewUsers = true;
+                sa.Lockout.DefaultLockoutTimeSpan = TimeSpan.FromMinutes(5);
+                sa.Lockout.MaxFailedAccessAttempts = 5;
+
+                sa.User.AllowedUserNameCharacters = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890@.-_+";
+                sa.User.RequireUniqueEmail = true;
+
+                sa.SignIn.RequireConfirmedAccount = true;
+                sa.SignIn.RequireConfirmedEmail = true;
+                sa.SignIn.RequireConfirmedPhoneNumber = true;
+            }).AddEntityFrameworkStores<ApplicationDbContext>();
+
+            //services.AddDefaultIdentity<ApplicationUser>(options => options.SignIn.RequireConfirmedAccount = true)
+            //    .AddEntityFrameworkStores<ApplicationDbContext>();
 
             services.AddRazorPages();
         }

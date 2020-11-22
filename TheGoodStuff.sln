@@ -7,7 +7,6 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TheGoodStuff.Church", "TheG
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Project Content", "Project Content", "{A9D82E6E-CD2B-4866-8A38-26EF69C665E4}"
 	ProjectSection(SolutionItems) = preProject
-		Notes\home.md = Notes\home.md
 		LICENSE = LICENSE
 		README.md = README.md
 	EndProjectSection
